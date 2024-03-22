@@ -22,6 +22,7 @@ func TestCalculate(t *testing.T) {
 		{"division", 6, "/", 2, 3, nil},
 		{"divide by zero", 6, "/", 0, 0, errors.New("division by zero is not allowed")},
 		{"modulo", 1, "%", 1, 0, errors.New("invalid operator")},
+		// added by Thom
 		{"divide zero by 6", 0, "/", 6, 0, nil},
 		{"negative result", 1, "-", 3, -2, nil},
 		{"multiply by 0", 3, "*", 0, 0, nil},

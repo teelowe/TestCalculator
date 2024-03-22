@@ -17,6 +17,7 @@ func TestParseOperand(t *testing.T) {
 		{"int", "1", 1, nil},
 		{"float", "3.14", 3.14, nil},
 		{"NaN", "abc", 0, errors.New("invalid operand")},
+		// added by Thom
 		{"also NaN", "a13b4", 0, errors.New("invalid operand")},
 	}
 
