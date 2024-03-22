@@ -5,6 +5,7 @@ import (
 	"strconv"
 )
 
+// Calculate the result of two operands and an associated operator
 func Calculate(operand1, operand2 float64, operator string) (float64, error) {
 	switch operator {
 	case "+":
@@ -23,6 +24,7 @@ func Calculate(operand1, operand2 float64, operator string) (float64, error) {
 	}
 }
 
+// ParseOperand provided as a string and return a float64, error
 func ParseOperand(operand string) (float64, error) {
 	value, err := strconv.ParseFloat(operand, 64)
 	if err != nil {
