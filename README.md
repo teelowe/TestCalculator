@@ -4,7 +4,7 @@
 
 Given that Go already has a testing framework (go test), it wasn't entirely clear to me if the goal here was to create a test framework that would completely replace go test, or, if the goal was to essentially extend the existing test setup to be more flexible and useful for the features requested (handling different types of tests, etc..).  I chose the latter.  If the goal was in fact the former, then I'm happy to try again, though I might suggest that such an exercise would be better served using something other than Go, which as I'm sure you are aware, has an existing, ubiquitous and tightly coupled test framework in `go test`.**
 
-to that end...
+to that end....
 
 The way the current calculator tests are setup lacks three primary features that I think would be useful.
 
